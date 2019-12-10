@@ -40,8 +40,7 @@
 								<p>${sdrow.kababCase(company_name)}</p>
 							</li>
 							<li>Loan amount: ${shtam.formatDollars(loan)}</li>
-							<!-- 6) Calculate tax amount from rate and loan -->
-							<li>Tax amount: ${rate + " " + loan}</li>
+							<li>Tax amount: ${shtam.formatDollars(shtam.taxTotal(loan, rate/100))}</li>
 							
 							<li>
 								<!-- 7) format date Year Short Month date and day: Format the dates as: 2011 Jan 11 (Tuesday) -->
