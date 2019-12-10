@@ -39,8 +39,7 @@
 								<!-- 3) Company Name should be title/heading case -->
 								<p>${sdrow.kababCase(company_name)}</p>
 							</li>
-							<!-- 5) format loan amount as dollars -->
-							<li>Loan amount: ${loan}</li>
+							<li>Loan amount: ${shtam.formatDollars(loan)}</li>
 							<!-- 6) Calculate tax amount from rate and loan -->
 							<li>Tax amount: ${rate + " " + loan}</li>
 							
